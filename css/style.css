@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+
+}
+
+:root {
+    --cor-fundo: rgb(214, 225, 14);
+    --cor-fundo-dark: rgb(19, 169, 64);
+    --cor-fonte: white;
+}
+
+.conteiner {
+    display: flex;
+    background: var(--cor-fundo);
+}
+
+.principal {
+    display:flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    border: 1px solid;
+}
